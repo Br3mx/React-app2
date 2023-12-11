@@ -1,12 +1,13 @@
 import styles from './List.module.scss'
 import Column from '../Column/Column.js';
+import { useState } from 'react';
 
 const List = () => {
-    const columns = [
+    const {columns, setColumns} = useState([
         { id: 1, title: 'Books', icon: 'book' },
       { id: 2, title: 'Movies', icon: 'film' },
       { id: 3, title: 'Games', icon: 'gamepad' }
-    ];
+    ]);
     setTimeout(() => {
         columns.push({ id: 4, title: 'Test column'});
         console.log(columns)
