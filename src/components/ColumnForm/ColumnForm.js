@@ -3,18 +3,18 @@ import Button from '../Button/Button.js';
 import { useState } from 'react';
 
 const ColumnForm = props => {
-    const [title, setValue] = useState('');
+    const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
     const handleSubmit = e => {
         e.preventDefault();
         props.action({ title: title, icon: icon });
-        setValue('');
+        setTitle('');
         setIcon('');
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={styles.formColumns} onSubmit={handleSubmit}>
                 <span className={styles.spanColumnForm}>Titile:</span>
-                <input className={styles.columnForm} type="text" value={title} onChange={e => setValue(e.target.value)}/>
+                <input className={styles.columnForm} type="text" value={title} onChange={e => setTitle(e.target.value)}/>
                 <span className={styles.spanColumnForm}>Icon:</span>
                 <input className={styles.columnForm} type="text" value={icon} onChange={e => setIcon(e.target.value)}></input>
                 <Button>Add Column</Button>
