@@ -29,6 +29,10 @@
         color: $color-light;
         text-decoration: none;
     }
+    .linkActive{
+        transition: 0.5s;
+        color: $color-warning;
+    }
    }
 
 }
