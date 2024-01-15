@@ -2,6 +2,7 @@ import styles from './Hero.module.scss';
 import PageTitle from '../PageTitle/PageTitle.js';
 
 
+
 const Hero = () => {
     return (
         <div className={styles.hero}>
