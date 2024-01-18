@@ -14,7 +14,7 @@ const CardForm = ({ columnId }) => {
     
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(addCard ({title, columnId }));
+        dispatch(addCard ({columnId, title }));
         setTitle('');
     }
     return (

@@ -11,3 +11,14 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.fav {
+        color: $color-warning;
+    }
+}
+
