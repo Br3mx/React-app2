@@ -17,7 +17,7 @@ button {
     border: none;
     cursor: pointer;
 
-    &.fav {
+    &.fav i {
         color: $color-warning;
     }
 }
