@@ -9,7 +9,7 @@ export const updateSearchString = payload => ({ type: UPDATE_SEARCHSTRING, paylo
 
 const searchStringReducer = (statePart = '', action) => {
     switch(action.type) {
-      case 'UPDATE_SEARCHSTRING':
+      case UPDATE_SEARCHSTRING:
         return action.payload.searchText;
       default:
         return statePart;
